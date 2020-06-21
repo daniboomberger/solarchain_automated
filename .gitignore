@@ -143,3 +143,6 @@ dmypy.json
 
 #ignore .ini files 
 *.ini
+
+#ignore config.py
+config.py
