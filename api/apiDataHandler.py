@@ -24,7 +24,8 @@ class apiDataHandler():
         for entry in data["body"][string_time]:
             if device_counter < len(self.devices):
                 consumption_amount = data["body"][string_time][entry][api_channel]
-                apartment_consumption = [int(consumption_amount),
+                
+                apartment_consumption = [consumption_amount,
                                         self.devices[device_counter]]
                 print(apartment_consumption)
 
